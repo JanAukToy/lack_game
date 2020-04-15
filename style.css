@@ -1,0 +1,61 @@
+
+body{
+  padding-top: 3%;
+}
+
+.texbox{
+  padding-left: 3%;
+}
+
+.block{
+  width:70%;
+}
+
+h1{
+  text-align: center;
+  color: red;
+}
+
+.content{
+  height:680px;
+  margin-top: 1.5%;
+}
+
+.button{
+  text-align: center;
+  border: 0px;
+  border-radius: 100px;
+  width:45%;
+  height: 80%;
+  margin-right: 2%;
+  float: left;
+  outline: 0;
+  transition-duration: 0.4s;
+}
+
+.lbutton{
+  background-color: aqua;
+  margin-left:2%;
+}
+
+.rbutton{
+  background-color: hotpink;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition-duration: 0.4s;
+}
+
+.button:active{
+  transform: scale(0.98);
+  transition-duration: 0.2s;
+}
+
+.count{
+  position: absolute;
+  font-size: 180px;
+  left:77%;
+  top:15%;
+}
