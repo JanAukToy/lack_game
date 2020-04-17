@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>運試し</title>
-  <script type="text/javascript" src="app.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>運試し</title>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
 
-<body>
+  <body>
+    <div class="block">
+      <div class="texbox">
+        <h1>最強の運を掴め！！！</h1>
+        <h2>～ルール説明～</h2>
+        <p>
+          下の２つのボタンからお好きな方をお選び下さい。正解を選ぶとカウントが追加されていきます。不正解の場合は０から再スタートです。
+        </p>
+        <p>何回でも挑戦して下さい。それでも５連続正解以上は難しいです。:D</p>
+      </div>
 
-<div class="block">
-  <div class="texbox">
-    <h1>最強の運を掴め！！！</h1>
-    <h2>～ルール説明～</h2>
-    <p>下の２つのボタンからお好きな方をお選び下さい。正解を選ぶとカウントが追加されていきます。不正解の場合は０から再スタートです。</p>
-    <p>何回でも挑戦して下さい。それでも５連続正解以上は難しいです。:D</p>
-  </div>
+      <div class="content">
+        <input type="button" class="button lbutton" onClick="push(1)" />
+        <input type="button" class="button rbutton" onClick="push(2)" />
+      </div>
+    </div>
 
-  <div class="content">
-    <input type="button" class="button lbutton" onClick="push(1)">
-    <input type="button" class="button rbutton" onClick="push(2)">
-  </div>
-</div>
+    <p id="count" class="count">0</p>
 
-<p id="count" class="count">0</p>
-
-<div class="logs">
-  <table border="1" width="100" height="150">
-    <tr>
-      <th>最高記録</th>
-    </tr>
-    <tr>
-      <td id="log">0</td>
-    </tr>
-  </table>
-</div>
-
-</body>
+    <div class="logs">
+      <table border="1" width="100" height="150">
+        <tr>
+          <th>最高記録</th>
+        </tr>
+        <tr>
+          <td id="log">0</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
