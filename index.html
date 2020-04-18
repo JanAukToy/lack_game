@@ -6,6 +6,8 @@
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>運試し</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
 
@@ -29,6 +31,7 @@
     <p id="count" class="count">0</p>
 
     <div class="logs">
+
       <table border="1" width="100" height="150">
         <tr>
           <th>最高記録</th>
@@ -37,6 +40,11 @@
           <td id="log">0</td>
         </tr>
       </table>
+      
+      <div id="tweet-area" class="twe">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      </div>
+
     </div>
   </body>
 </html>
