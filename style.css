@@ -2,6 +2,7 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 1%;
+  background-color: rgb(191, 240, 255);
 }
 
 .texbox{
@@ -14,7 +15,7 @@ body{
 
 h1{
   text-align: center;
-  color: red;
+  color: rgb(235, 42, 42);
 }
 
 .content{
@@ -34,18 +35,28 @@ h1{
 }
 
 .lbutton{
-  background-color: aqua;
+  background-color: rgb(0, 252, 13);
+  opacity: 0.7;
   margin-left:2%;
+}
+
+.lbutton:hover{
+  background-color: rgb(0, 252, 13);
+  opacity: 1;
 }
 
 .rbutton{
   background-color:  hotpink;
+  opacity: 0.7;
+}
+
+.rbutton:hover{
+  background-color:   hotpink;
+  opacity: 1;
 }
 
 .button:hover{
   cursor: pointer;
-  transform: scale(1.02);
-  transition-duration: 0.4s;
 }
 
 .button:active{
@@ -75,4 +86,9 @@ td{
   text-align: center;
   font-size: 30px;
   height:60px;
+}
+
+.twe{
+  margin-top: 3%;
+  text-align: center;
 }
