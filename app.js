@@ -35,5 +35,21 @@ function push(btnNo) {
       document.getElementById("count").innerText = count;
     }
   }
-  random = Math.floor(Math.random() * 2) + 1;
+  random = Math.floor(Math.random() * 2) + 1;  
+
+  function setTweetButton(text){
+    $('#tweet-area').empty();
+    
+    twttr.widgets.createShareButton(
+      "",
+      document.getElementById("tweet-area"),
+      {
+        size: "large", //ボタンはでかく
+        text: "＜＜強運は誰だ！！運試しゲーム＞＞私は"+text+"回連続成功したぞ！！", // 狙ったテキスト
+        hashtags: "運試しゲーム", // ハッシュタグ
+      }
+    );
+  }
+  setTweetButton(logt);
 }
+
