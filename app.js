@@ -1,55 +1,52 @@
 let random = Math.floor(Math.random() * 2) + 1;
-left = 1;
-right = 2;
-count = 0;
+const left = 1;
+const right = 2;
+let count = 0;
+let count_b = 0;
 
 function push(btnNo) {
-  let logt = document.getElementById("log").textContent;
+  let logt = document.getElementById("high_score").textContent;
+  let log = document.getElementById("high_score");
 
-  let log = document.getElementById("log");
+  let counter = document.getElementById("count");
+
+  let b_count = document.getElementById("battle_count");
 
   if (btnNo === 1) {
     if (random === left) {
       count += 1;
-      document.getElementById("count").innerText = count;
+      counter.innerText = count;
 
       if (count > logt) {
         log.innerHTML = count;
       }
     } else {
       count = 0;
-      document.getElementById("count").innerText = count;
+      counter.innerText = count;
+
+      count_b += 1;
+      b_count.innerText = count_b;
     }
   }
 
   if (btnNo === 2) {
     if (random === right) {
       count += 1;
-      document.getElementById("count").innerText = count;
+      counter.innerText = count;
 
       if (count > logt) {
         log.innerHTML = count;
       }
     } else {
       count = 0;
-      document.getElementById("count").innerText = count;
+      counter.innerText = count;
+
+      count_b += 1;
+      b_count.innerText = count_b;
     }
   }
   random = Math.floor(Math.random() * 2) + 1;  
 
-  function setTweetButton(text){
-    $('#tweet-area').empty();
-    
-    twttr.widgets.createShareButton(
-      "",
-      document.getElementById("tweet-area"),
-      {
-        size: "large", 
-        text: "＜＜強運は誰だ！！運試しゲーム＞＞私は"+text+"回連続成功したぞ！！", 
-        hashtags: "運試しゲーム", 
-      }
-    );
-  }
-  setTweetButton(logt);
+  let bcount_txt = document.getElementById("battle_count").textContent;
+  setTweetButton(logt,bcount_txt);
 }
-
