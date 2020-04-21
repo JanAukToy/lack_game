@@ -44,9 +44,9 @@ function push(btnNo) {
       "",
       document.getElementById("tweet-area"),
       {
-        size: "large", //ボタンはでかく
-        text: "＜＜強運は誰だ！！運試しゲーム＞＞私は"+text+"回連続成功したぞ！！", // 狙ったテキスト
-        hashtags: "運試しゲーム", // ハッシュタグ
+        size: "large", 
+        text: "＜＜強運は誰だ！！運試しゲーム＞＞私は"+text+"回連続成功したぞ！！", 
+        hashtags: "運試しゲーム", 
       }
     );
   }
