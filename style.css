@@ -66,25 +66,23 @@ h1{
 .count{
   position: absolute;
   font-size: 180px;
-  left:75%;
+  left:73%;
   top:15%;
 }
 
 .logs{
   position: absolute;
   top:37%;
-  left:88%;
+  left:84%;
 }
 
 th{
   background-color: rgb(255, 136, 136);
-  height:15px;
 }
 
 td{
   text-align: center;
   font-size: 30px;
-  height:60px;
 }
 
 .twe{
