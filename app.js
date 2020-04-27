@@ -20,12 +20,20 @@ function push(btnNo) {
       if (count > logt) {
         log.innerHTML = count;
       }
+
+      document.getElementById('t_sound').play();
+      document.getElementById('t_sound').currentTime = 0;
+      
     } else {
       count = 0;
       counter.innerText = count;
 
       count_b += 1;
       b_count.innerText = count_b;
+
+      document.getElementById('f_sound').play();
+      document.getElementById('f_sound').currentTime = 0;
+
     }
   }
 
@@ -37,12 +45,20 @@ function push(btnNo) {
       if (count > logt) {
         log.innerHTML = count;
       }
+
+      document.getElementById('t_sound').play();
+      document.getElementById('t_sound').currentTime = 0;
+
     } else {
       count = 0;
       counter.innerText = count;
 
       count_b += 1;
       b_count.innerText = count_b;
+
+      document.getElementById('f_sound').play();
+      document.getElementById('f_sound').currentTime = 0;
+
     }
   }
   random = Math.floor(Math.random() * 2) + 1;  
